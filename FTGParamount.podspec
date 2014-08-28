@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.source_files = 'FTGParamount/*.{h,m}'
   spec.resources    = 'FTGParamount/FTGParamount.bundle'
   spec.requires_arc = true
+  spec.platform     = :ios
   spec.ios.deployment_target = '6.0'
-  spec.osx.deployment_target = '10.7'
   spec.social_media_url   = "https://twitter.com/onmyway133"
 end
