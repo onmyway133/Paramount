@@ -7,12 +7,18 @@
 //
 
 #import "FTGAppDelegate.h"
+#import "FTGParamount.h"
 
 @implementation FTGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [FTGParamount setActionBlock:^{
+        NSLog(@"FTGParamount");
+    }];
+
+    [FTGParamount show];
+
     return YES;
 }
 							

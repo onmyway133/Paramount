@@ -8,9 +8,11 @@
 
 #import "FTGParamountToolbarItem.h"
 
+#define FLEXFloor(x) (floor([[UIScreen mainScreen] scale] * (x)) / [[UIScreen mainScreen] scale])
+
 @interface FTGParamountToolbarItem ()
 
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSAttributedString *attributedTitle;
 @property (nonatomic, strong) UIImage *image;
 
 @end
@@ -21,7 +23,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.titleLabel.font = [[self class] titleFont];
         self.backgroundColor = [[self class] defaultBackgroundColor];
         [self setTitleColor:[[self class] defaultTitleColor] forState:UIControlStateNormal];
         [self setTitleColor:[[self class] disabledTitleColor] forState:UIControlStateDisabled];
@@ -29,24 +30,28 @@
     return self;
 }
 
-+ (instancetype)toolbarItemWithTitle:(NSString *)title
++ (instancetype)toolbarItemWithTitle:(NSString *)title image:(UIImage *)image
 {
     FTGParamountToolbarItem *toolbarItem = [self buttonWithType:UIButtonTypeCustom];
-    toolbarItem.title = title;
-    toolbarItem.image = [[UIImage alloc] init];
-
-    [toolbarItem setTitle:title forState:UIControlStateNormal];
-    [toolbarItem setImage:toolbarItem.image forState:UIControlStateNormal];
-
+    NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:[self titleAttributes]];
+    toolbarItem.attributedTitle = attributedTitle;
+    toolbarItem.image = image;
+    [toolbarItem setAttributedTitle:attributedTitle forState:UIControlStateNormal];
+    [toolbarItem setImage:image forState:UIControlStateNormal];
     return toolbarItem;
 }
 
 
 #pragma mark - Display Defaults
 
-+ (UIFont *)titleFont
++ (UIFont *)defaultFontOfSize:(CGFloat)size
 {
-    return [UIFont systemFontOfSize:12.0];
+    return [UIFont fontWithName:@"HelveticaNeue" size:size];
+}
+
++ (NSDictionary *)titleAttributes
+{
+    return @{NSFontAttributeName : [self defaultFontOfSize:12.0]};
 }
 
 + (UIColor *)defaultTitleColor
@@ -112,11 +117,12 @@
 {
     // Bottom aligned and centered.
     CGRect titleRect = CGRectZero;
-    CGSize titleSize = ([self.title sizeWithFont:[[self class] titleFont] constrainedToSize:contentRect.size]);
+    CGSize titleSize = [self.attributedTitle boundingRectWithSize:contentRect.size options:0 context:nil].size;
     titleSize = CGSizeMake(ceil(titleSize.width), ceil(titleSize.height));
     titleRect.size = titleSize;
     titleRect.origin.y = contentRect.origin.y + CGRectGetMaxY(contentRect) - titleSize.height;
-    titleRect.origin.x = contentRect.origin.x + floor((contentRect.size.width - titleSize.width) / 2.0);
+    titleRect.origin.x = contentRect.origin.x + FLEXFloor((contentRect.size.width - titleSize.width) / 2.0);
+
     return titleRect;
 }
 
@@ -125,8 +131,8 @@
     CGSize imageSize = self.image.size;
     CGRect titleRect = [self titleRectForContentRect:contentRect];
     CGFloat availableHeight = contentRect.size.height - titleRect.size.height - [[self class] topMargin];
-    CGFloat originY = [[self class] topMargin] + floor((availableHeight - imageSize.height) / 2.0);
-    CGFloat originX = floor((contentRect.size.width - imageSize.width) / 2.0);
+    CGFloat originY = [[self class] topMargin] + FLEXFloor((availableHeight - imageSize.height) / 2.0);
+    CGFloat originX = FLEXFloor((contentRect.size.width - imageSize.width) / 2.0);
     CGRect imageRect = CGRectMake(originX, originY, imageSize.width, imageSize.height);
     return imageRect;
 }

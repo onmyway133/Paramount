@@ -7,8 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FTGParamount.h"
+
+@class FTGParamountViewController;
+
+@protocol FTGParamountViewControllerDelegate <NSObject>
+
+- (void)viewControllerDidClose:(FTGParamountViewController *)viewController;
+
+@end
 
 @interface FTGParamountViewController : UIViewController
+
+@property (nonatomic, copy) FTGParamountActionBlock actionBlock;
+@property (nonatomic, weak) id<FTGParamountViewControllerDelegate> delegate;
 
 - (BOOL)shouldReceiveTouchAtWindowPoint:(CGPoint)pointInWindowCoordinates;
 

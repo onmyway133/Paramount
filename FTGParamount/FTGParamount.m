@@ -10,11 +10,10 @@
 #import "FTGParamountWindow.h"
 #import "FTGParamountViewController.h"
 
-@interface FTGParamount ()
+@interface FTGParamount () <FTGParamountViewControllerDelegate>
 
 @property (nonatomic, strong) FTGParamountWindow *window;
 @property (nonatomic, strong) FTGParamountViewController *viewController;
-@property (nonatomic, copy) FTGParamountActionBlock actionBlock;
 
 @end
 
@@ -35,9 +34,13 @@
 {
     self = [super init];
     if (self) {
+        NSAssert([NSThread isMainThread], @"You must use %@ from the main thread only.", NSStringFromClass([self class]));
+        
         _window = [[FTGParamountWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
         _viewController = [[FTGParamountViewController alloc] init];
+        _viewController.delegate = self;
+        
         _window.rootViewController = _viewController;
         //[_window addSubview:_viewController.view];
     }
@@ -58,7 +61,13 @@
 
 + (void)setActionBlock:(FTGParamountActionBlock)actionBlock
 {
-    [FTGParamount sharedInstance].actionBlock = actionBlock;
+    [FTGParamount sharedInstance].viewController.actionBlock = actionBlock;
+}
+
+#pragma mark - FTGParamountViewControllerDelegate
+- (void)viewControllerDidClose:(FTGParamountViewController *)viewController
+{
+    [[self class] hide];
 }
 
 

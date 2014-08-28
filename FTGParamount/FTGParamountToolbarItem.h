@@ -10,7 +10,8 @@
 
 @interface FTGParamountToolbarItem : UIButton
 
-+ (instancetype)toolbarItemWithTitle:(NSString *)title;
++ (instancetype)toolbarItemWithTitle:(NSString *)title image:(UIImage *)image;
+
 + (UIColor *)defaultBackgroundColor;
 
 @end

@@ -16,8 +16,14 @@
 /// Users of the toolbar can attach a pan gesture recognizer to decide how to reposition the toolbar.
 @property (nonatomic, strong, readonly) UIView *dragHandle;
 
-/// Toolbar item for perform action.
+/// Toolbar item for perform action
 /// Users of the toolbar can configure the enabled/selected state and event targets/actions.
 @property (nonatomic, strong, readonly) FTGParamountToolbarItem *actionItem;
+
+/// Toolbar item for hiding the Paramount
+/// Users of the toolbar can configure the event targets/actions.
+@property (nonatomic, strong, readonly) FTGParamountToolbarItem *closeItem;
+
+- (CGFloat)defaultWidth;
 
 @end
