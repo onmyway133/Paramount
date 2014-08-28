@@ -27,9 +27,7 @@
 		99DC1F0119AE3A2B00D5F88F /* FTGParamountToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0019AE3A2B00D5F88F /* FTGParamountToolbar.m */; };
 		99DC1F0419AE3A4100D5F88F /* FTGParamountToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0319AE3A4100D5F88F /* FTGParamountToolbarItem.m */; };
 		99DC1F0719AE3E5900D5F88F /* FTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0619AE3E5900D5F88F /* FTGViewController.m */; };
-		D2E0C3CD19AF14E600B3AFEB /* action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E0C3CA19AF14E600B3AFEB /* action@2x.png */; };
-		D2E0C3CE19AF14E600B3AFEB /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E0C3CB19AF14E600B3AFEB /* close@2x.png */; };
-		D2E0C3CF19AF14E600B3AFEB /* drag_handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E0C3CC19AF14E600B3AFEB /* drag_handle@2x.png */; };
+		D2E0C3D119AF179000B3AFEB /* FTGParamount.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2E0C3D019AF179000B3AFEB /* FTGParamount.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +71,7 @@
 		99DC1F0319AE3A4100D5F88F /* FTGParamountToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamountToolbarItem.m; sourceTree = "<group>"; };
 		99DC1F0519AE3E5900D5F88F /* FTGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGViewController.h; sourceTree = "<group>"; };
 		99DC1F0619AE3E5900D5F88F /* FTGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGViewController.m; sourceTree = "<group>"; };
-		D2E0C3CA19AF14E600B3AFEB /* action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action@2x.png"; sourceTree = "<group>"; };
-		D2E0C3CB19AF14E600B3AFEB /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
-		D2E0C3CC19AF14E600B3AFEB /* drag_handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drag_handle@2x.png"; sourceTree = "<group>"; };
+		D2E0C3D019AF179000B3AFEB /* FTGParamount.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FTGParamount.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +176,7 @@
 		9903A8E719A9767E00F09DC9 /* FTGParamount */ = {
 			isa = PBXGroup;
 			children = (
-				D2E0C3CA19AF14E600B3AFEB /* action@2x.png */,
-				D2E0C3CB19AF14E600B3AFEB /* close@2x.png */,
-				D2E0C3CC19AF14E600B3AFEB /* drag_handle@2x.png */,
+				D2E0C3D019AF179000B3AFEB /* FTGParamount.bundle */,
 				99DC1EF619AE39A700D5F88F /* FTGParamount.h */,
 				99DC1EF719AE39A700D5F88F /* FTGParamount.m */,
 				99DC1EF919AE3A1000D5F88F /* FTGParamountWindow.h */,
@@ -275,10 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9903A8C619A9766200F09DC9 /* Main_iPad.storyboard in Resources */,
-				D2E0C3CF19AF14E600B3AFEB /* drag_handle@2x.png in Resources */,
 				9903A8CB19A9766200F09DC9 /* Images.xcassets in Resources */,
-				D2E0C3CD19AF14E600B3AFEB /* action@2x.png in Resources */,
-				D2E0C3CE19AF14E600B3AFEB /* close@2x.png in Resources */,
+				D2E0C3D119AF179000B3AFEB /* FTGParamount.bundle in Resources */,
 				9903A8C319A9766200F09DC9 /* Main_iPhone.storyboard in Resources */,
 				9903A8BA19A9766200F09DC9 /* InfoPlist.strings in Resources */,
 			);

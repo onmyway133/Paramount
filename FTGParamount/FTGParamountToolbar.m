@@ -33,16 +33,16 @@
         self.dragHandle.backgroundColor = [FTGParamountToolbarItem defaultBackgroundColor];
         [self addSubview:self.dragHandle];
 
-        UIImage *dragHandle = [UIImage imageNamed:@"drag_handle"];
+        UIImage *dragHandle = [UIImage imageNamed:@"FTGParamount.bundle/drag_handle"];
         self.dragHandleImageView = [[UIImageView alloc] initWithImage:dragHandle];
         [self.dragHandle addSubview:self.dragHandleImageView];
 
-        UIImage *actionIcon = [UIImage imageNamed:@"action"];
+        UIImage *actionIcon = [UIImage imageNamed:@"FTGParamount.bundle/action"];
         self.actionItem = [FTGParamountToolbarItem toolbarItemWithTitle:@"action" image:actionIcon];
         [self addSubview:self.actionItem];
         [toolbarItems addObject:self.actionItem];
 
-        UIImage *closeIcon = [UIImage imageNamed:@"close"];
+        UIImage *closeIcon = [UIImage imageNamed:@"FTGParamount.bundle/close"];
         self.closeItem = [FTGParamountToolbarItem toolbarItemWithTitle:@"close" image:closeIcon];
         [self addSubview:self.closeItem];
         [toolbarItems addObject:self.closeItem];
