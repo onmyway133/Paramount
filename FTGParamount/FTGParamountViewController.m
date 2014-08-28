@@ -1,18 +1,18 @@
 //
-//  FTGViewController.m
+//  FTGParamountViewController.m
 //  FTGParamountDemo
 //
 //  Created by Khoa Pham on 8/27/14.
 //  Copyright (c) 2014 Fantageek. All rights reserved.
 //
 
-#import "FTGViewController.h"
+#import "FTGParamountViewController.h"
 
-@interface FTGViewController ()
+@interface FTGParamountViewController ()
 
 @end
 
-@implementation FTGViewController
+@implementation FTGParamountViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,15 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (BOOL)shouldReceiveTouchAtWindowPoint:(CGPoint)pointInWindowCoordinates
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return YES;
 }
-*/
 
 @end

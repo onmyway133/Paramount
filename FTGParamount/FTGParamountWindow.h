@@ -1,5 +1,5 @@
 //
-//  FTGViewController.h
+//  FTGParamountWindow.h
 //  FTGParamountDemo
 //
 //  Created by Khoa Pham on 8/27/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTGViewController : UIViewController
+@interface FTGParamountWindow : UIWindow
 
 @end

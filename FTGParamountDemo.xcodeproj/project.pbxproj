@@ -15,13 +15,18 @@
 		9903A8C019A9766200F09DC9 /* FTGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9903A8BF19A9766200F09DC9 /* FTGAppDelegate.m */; };
 		9903A8C319A9766200F09DC9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903A8C119A9766200F09DC9 /* Main_iPhone.storyboard */; };
 		9903A8C619A9766200F09DC9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903A8C419A9766200F09DC9 /* Main_iPad.storyboard */; };
-		9903A8C919A9766200F09DC9 /* FTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9903A8C819A9766200F09DC9 /* FTGViewController.m */; };
 		9903A8CB19A9766200F09DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9903A8CA19A9766200F09DC9 /* Images.xcassets */; };
 		9903A8D219A9766200F09DC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903A8D119A9766200F09DC9 /* XCTest.framework */; };
 		9903A8D319A9766200F09DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903A8AF19A9766200F09DC9 /* Foundation.framework */; };
 		9903A8D419A9766300F09DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903A8B319A9766200F09DC9 /* UIKit.framework */; };
 		9903A8DC19A9766300F09DC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9903A8DA19A9766300F09DC9 /* InfoPlist.strings */; };
 		9903A8DE19A9766300F09DC9 /* FTGParamountDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9903A8DD19A9766300F09DC9 /* FTGParamountDemoTests.m */; };
+		99DC1EF819AE39A700D5F88F /* FTGParamount.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1EF719AE39A700D5F88F /* FTGParamount.m */; };
+		99DC1EFB19AE3A1000D5F88F /* FTGParamountWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1EFA19AE3A1000D5F88F /* FTGParamountWindow.m */; };
+		99DC1EFE19AE3A2300D5F88F /* FTGParamountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1EFD19AE3A2300D5F88F /* FTGParamountViewController.m */; };
+		99DC1F0119AE3A2B00D5F88F /* FTGParamountToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0019AE3A2B00D5F88F /* FTGParamountToolbar.m */; };
+		99DC1F0419AE3A4100D5F88F /* FTGParamountToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0319AE3A4100D5F88F /* FTGParamountToolbarItem.m */; };
+		99DC1F0719AE3E5900D5F88F /* FTGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC1F0619AE3E5900D5F88F /* FTGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +52,24 @@
 		9903A8BF19A9766200F09DC9 /* FTGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTGAppDelegate.m; sourceTree = "<group>"; };
 		9903A8C219A9766200F09DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9903A8C519A9766200F09DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9903A8C719A9766200F09DC9 /* FTGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTGViewController.h; sourceTree = "<group>"; };
-		9903A8C819A9766200F09DC9 /* FTGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTGViewController.m; sourceTree = "<group>"; };
 		9903A8CA19A9766200F09DC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9903A8D019A9766200F09DC9 /* FTGParamountDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTGParamountDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9903A8D119A9766200F09DC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9903A8D919A9766300F09DC9 /* FTGParamountDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTGParamountDemoTests-Info.plist"; sourceTree = "<group>"; };
 		9903A8DB19A9766300F09DC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9903A8DD19A9766300F09DC9 /* FTGParamountDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTGParamountDemoTests.m; sourceTree = "<group>"; };
+		99DC1EF619AE39A700D5F88F /* FTGParamount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGParamount.h; sourceTree = "<group>"; };
+		99DC1EF719AE39A700D5F88F /* FTGParamount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamount.m; sourceTree = "<group>"; };
+		99DC1EF919AE3A1000D5F88F /* FTGParamountWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGParamountWindow.h; sourceTree = "<group>"; };
+		99DC1EFA19AE3A1000D5F88F /* FTGParamountWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamountWindow.m; sourceTree = "<group>"; };
+		99DC1EFC19AE3A2300D5F88F /* FTGParamountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGParamountViewController.h; sourceTree = "<group>"; };
+		99DC1EFD19AE3A2300D5F88F /* FTGParamountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamountViewController.m; sourceTree = "<group>"; };
+		99DC1EFF19AE3A2B00D5F88F /* FTGParamountToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGParamountToolbar.h; sourceTree = "<group>"; };
+		99DC1F0019AE3A2B00D5F88F /* FTGParamountToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamountToolbar.m; sourceTree = "<group>"; };
+		99DC1F0219AE3A4100D5F88F /* FTGParamountToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGParamountToolbarItem.h; sourceTree = "<group>"; };
+		99DC1F0319AE3A4100D5F88F /* FTGParamountToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGParamountToolbarItem.m; sourceTree = "<group>"; };
+		99DC1F0519AE3E5900D5F88F /* FTGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGViewController.h; sourceTree = "<group>"; };
+		99DC1F0619AE3E5900D5F88F /* FTGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +134,10 @@
 				9903A8BF19A9766200F09DC9 /* FTGAppDelegate.m */,
 				9903A8C119A9766200F09DC9 /* Main_iPhone.storyboard */,
 				9903A8C419A9766200F09DC9 /* Main_iPad.storyboard */,
-				9903A8C719A9766200F09DC9 /* FTGViewController.h */,
-				9903A8C819A9766200F09DC9 /* FTGViewController.m */,
 				9903A8CA19A9766200F09DC9 /* Images.xcassets */,
 				9903A8B619A9766200F09DC9 /* Supporting Files */,
+				99DC1F0519AE3E5900D5F88F /* FTGViewController.h */,
+				99DC1F0619AE3E5900D5F88F /* FTGViewController.m */,
 			);
 			path = FTGParamountDemo;
 			sourceTree = "<group>";
@@ -159,6 +174,16 @@
 		9903A8E719A9767E00F09DC9 /* FTGParamount */ = {
 			isa = PBXGroup;
 			children = (
+				99DC1EF619AE39A700D5F88F /* FTGParamount.h */,
+				99DC1EF719AE39A700D5F88F /* FTGParamount.m */,
+				99DC1EF919AE3A1000D5F88F /* FTGParamountWindow.h */,
+				99DC1EFA19AE3A1000D5F88F /* FTGParamountWindow.m */,
+				99DC1EFC19AE3A2300D5F88F /* FTGParamountViewController.h */,
+				99DC1EFD19AE3A2300D5F88F /* FTGParamountViewController.m */,
+				99DC1EFF19AE3A2B00D5F88F /* FTGParamountToolbar.h */,
+				99DC1F0019AE3A2B00D5F88F /* FTGParamountToolbar.m */,
+				99DC1F0219AE3A4100D5F88F /* FTGParamountToolbarItem.h */,
+				99DC1F0319AE3A4100D5F88F /* FTGParamountToolbarItem.m */,
 			);
 			path = FTGParamount;
 			sourceTree = "<group>";
@@ -263,8 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9903A8C019A9766200F09DC9 /* FTGAppDelegate.m in Sources */,
+				99DC1EF819AE39A700D5F88F /* FTGParamount.m in Sources */,
+				99DC1EFE19AE3A2300D5F88F /* FTGParamountViewController.m in Sources */,
 				9903A8BC19A9766200F09DC9 /* main.m in Sources */,
-				9903A8C919A9766200F09DC9 /* FTGViewController.m in Sources */,
+				99DC1EFB19AE3A1000D5F88F /* FTGParamountWindow.m in Sources */,
+				99DC1F0119AE3A2B00D5F88F /* FTGParamountToolbar.m in Sources */,
+				99DC1F0719AE3E5900D5F88F /* FTGViewController.m in Sources */,
+				99DC1F0419AE3A4100D5F88F /* FTGParamountToolbarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +509,7 @@
 				9903A8E319A9766300F09DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9903A8E419A9766300F09DC9 /* Build configuration list for PBXNativeTarget "FTGParamountDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +518,7 @@
 				9903A8E619A9766300F09DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
