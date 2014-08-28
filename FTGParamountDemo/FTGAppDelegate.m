@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [FTGParamount setActionBlock:^{
-        NSLog(@"FTGParamount");
+        NSLog(@"Perform your action here");
     }];
 
     [FTGParamount show];

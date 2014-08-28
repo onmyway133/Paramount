@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FTGViewController : UIViewController
+@interface FTGViewController : UITableViewController
 
 @end
