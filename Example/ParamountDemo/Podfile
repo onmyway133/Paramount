@@ -1,7 +1,11 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
-pod 'Paramount', path: '../../'
+target 'ParamountDemo' do
+	pod 'Paramount', path: '../../'
+end
 
-target 'ParamountDemo'
+
+
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625975679243F71CCB6A8594 /* Pods_ParamountDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B9FF3D115AF90CA50BBBD0 /* Pods_ParamountDemo.framework */; };
 		D5C7F7701C3BCF14008CDDBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F76E1C3BCF14008CDDBA /* Main.storyboard */; };
 		D5C7F7751C3BCF14008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7731C3BCF14008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F7821C3BCF90008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F77E1C3BCF90008CDDBA /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76251EF02183101C6D3A800C /* Pods-ParamountDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParamountDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParamountDemo/Pods-ParamountDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		95B9FF3D115AF90CA50BBBD0 /* Pods_ParamountDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParamountDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09B8781DF509BFD2E05EFF1 /* Pods-ParamountDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParamountDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParamountDemo/Pods-ParamountDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D5C7F7671C3BCF14008CDDBA /* ParamountDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParamountDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F76F1C3BCF14008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5C7F7741C3BCF14008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625975679243F71CCB6A8594 /* Pods_ParamountDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65C09DAE4E905849388C734B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B9FF3D115AF90CA50BBBD0 /* Pods_ParamountDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5C7F75E1C3BCF14008CDDBA = {
 			isa = PBXGroup;
 			children = (
 				D5C7F7691C3BCF14008CDDBA /* ParamountDemo */,
 				D5C7F7681C3BCF14008CDDBA /* Products */,
+				E8F0E3583924A78AD7DE2311 /* Pods */,
+				65C09DAE4E905849388C734B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +103,15 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		E8F0E3583924A78AD7DE2311 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76251EF02183101C6D3A800C /* Pods-ParamountDemo.debug.xcconfig */,
+				B09B8781DF509BFD2E05EFF1 /* Pods-ParamountDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7791C3BCF14008CDDBA /* Build configuration list for PBXNativeTarget "ParamountDemo" */;
 			buildPhases = (
+				0B03E40D7CB248C7B4CB2BBC /* 📦 Check Pods Manifest.lock */,
 				D5C7F7631C3BCF14008CDDBA /* Sources */,
 				D5C7F7641C3BCF14008CDDBA /* Frameworks */,
 				D5C7F7651C3BCF14008CDDBA /* Resources */,
+				0848A6B663FB425F0C7F2888 /* 📦 Embed Pods Frameworks */,
+				E34DCC30F8BED13D9D531869 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0848A6B663FB425F0C7F2888 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParamountDemo/Pods-ParamountDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B03E40D7CB248C7B4CB2BBC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E34DCC30F8BED13D9D531869 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParamountDemo/Pods-ParamountDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5C7F7631C3BCF14008CDDBA /* Sources */ = {
@@ -269,9 +344,11 @@
 		};
 		D5C7F77A1C3BCF14008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76251EF02183101C6D3A800C /* Pods-ParamountDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParamountDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.Paramount.ParamountDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,9 +357,11 @@
 		};
 		D5C7F77B1C3BCF14008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09B8781DF509BFD2E05EFF1 /* Pods-ParamountDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParamountDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.Paramount.ParamountDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +387,7 @@
 				D5C7F77B1C3BCF14008CDDBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
