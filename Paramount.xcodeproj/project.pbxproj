@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20140B31CCFEE1100130CB2 /* Paramount.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D20140B21CCFEE1100130CB2 /* Paramount.bundle */; };
 		D20140B51CCFF55000130CB2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20140B41CCFF55000130CB2 /* Manager.swift */; };
 		D20140B71CCFF67100130CB2 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20140B61CCFF67100130CB2 /* Dimension.swift */; };
 		D20FC5C71CCFE71D0084CF85 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FC5C61CCFE71D0084CF85 /* Window.swift */; };
 		D20FC5C91CCFE7A70084CF85 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FC5C81CCFE7A70084CF85 /* Toolbar.swift */; };
 		D20FC5CB1CCFE7AD0084CF85 /* ToolbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FC5CA1CCFE7AD0084CF85 /* ToolbarItem.swift */; };
 		D20FC5CD1CCFE7B30084CF85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FC5CC1CCFE7B30084CF85 /* ViewController.swift */; };
+		D2F0ABF71CD007D80009BF35 /* Paramount.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2F0ABF61CD007D80009BF35 /* Paramount.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +27,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D20140B21CCFEE1100130CB2 /* Paramount.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Paramount.bundle; path = "../../../Downloads/Paramount-master 2/FTGParamount/Paramount.bundle"; sourceTree = "<group>"; };
 		D20140B41CCFF55000130CB2 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D20140B61CCFF67100130CB2 /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		D20FC5C61CCFE71D0084CF85 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		D20FC5C81CCFE7A70084CF85 /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		D20FC5CA1CCFE7AD0084CF85 /* ToolbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarItem.swift; sourceTree = "<group>"; };
 		D20FC5CC1CCFE7B30084CF85 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2F0ABF61CD007D80009BF35 /* Paramount.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Paramount.bundle; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Paramount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paramount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Paramount-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paramount-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +93,7 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D20140B21CCFEE1100130CB2 /* Paramount.bundle */,
+				D2F0ABF61CD007D80009BF35 /* Paramount.bundle */,
 				D20FC5C61CCFE71D0084CF85 /* Window.swift */,
 				D20FC5C81CCFE7A70084CF85 /* Toolbar.swift */,
 				D20FC5CA1CCFE7AD0084CF85 /* ToolbarItem.swift */,
@@ -204,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20140B31CCFEE1100130CB2 /* Paramount.bundle in Resources */,
+				D2F0ABF71CD007D80009BF35 /* Paramount.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
