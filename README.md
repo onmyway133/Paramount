@@ -1,20 +1,24 @@
 # Paramount
 
+Like Flipboard FLEX, but allows custom action
+
 [![CI Status](http://img.shields.io/travis/onmyway133/Paramount.svg?style=flat)](https://travis-ci.org/onmyway133/Paramount)
 [![Version](https://img.shields.io/cocoapods/v/Paramount.svg?style=flat)](http://cocoadocs.org/docsets/Paramount)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Paramount.svg?style=flat)](http://cocoadocs.org/docsets/Paramount)
 [![Platform](https://img.shields.io/cocoapods/p/Paramount.svg?style=flat)](http://cocoadocs.org/docsets/Paramount)
 
-## Description
-
-**Paramount** description.
-
 ## Usage
 
 ```swift
-<API>
+Manager.action = {
+  print("action touched")
+}
+
+Manager.show()
 ```
+
+![](Screenshots/paramount.png)
 
 ## Installation
 
