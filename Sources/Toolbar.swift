@@ -23,11 +23,11 @@ public class Toolbar: UIView {
     dragHandle.backgroundColor = UIColor(white: 1.0, alpha: 0.95)
     addSubview(dragHandle)
 
-    dragHandleImageView = UIImageView(image: UIImage(named: "Paramount.bundle/drag_handle"))
+    dragHandleImageView = UIImageView(image: UIImage.make("drag_handle"))
     dragHandle.addSubview(dragHandleImageView)
 
-    actionItem = ToolbarItem.make(title: "action", image: UIImage(named: "Paramount.bundle/action"))
-    closeItem = ToolbarItem.make(title: "close", image: UIImage(named: "Paramount.bundle/close"))
+    actionItem = ToolbarItem.make(title: "action", image: UIImage.make("action"))
+    closeItem = ToolbarItem.make(title: "close", image: UIImage.make("close"))
 
     stackView = UIStackView(arrangedSubviews: [actionItem, closeItem])
     stackView.axis = .Horizontal

@@ -15,7 +15,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.source_files = 'Sources/**/*'
-  s.resources    = 'Sources/Paramount.bundle'
+  s.resource_bundle = {
+    'Paramount' => ['Sources/Paramount.bundle/*.png']
+  }
 
   s.ios.frameworks = 'UIKit', 'Foundation'
 end
