@@ -44,7 +44,7 @@ public class ViewController: UIViewController {
   }
 
   func closeDidTouch() {
-
+    close?()
   }
 
   // MARK: - Gesture

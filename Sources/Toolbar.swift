@@ -32,11 +32,12 @@ public class Toolbar: UIView {
     stackView = UIStackView(arrangedSubviews: [actionItem, closeItem])
     stackView.axis = .Horizontal
     stackView.distribution = .FillEqually
-
-    setupContraints()
+    addSubview(stackView)
 
     self.frame.size.width = Dimension.Handle.width + Dimension.ToolbarItem.width * CGFloat(stackView.arrangedSubviews.count)
     self.frame.size.height = Dimension.Toolbar.height
+
+    setupContraints()
   }
 
   public required init?(coder aDecoder: NSCoder) {
