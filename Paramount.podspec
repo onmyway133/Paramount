@@ -11,10 +11,11 @@ Pod::Spec.new do |s|
   }
   s.social_media_url = 'https://twitter.com/onmyway133'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.requires_arc = true
-  ios.source_files = 'Sources/**/*'
+  s.ios.source_files = 'Sources/**/*'
+  s.resources    = 'Sources/Paramount.bundle'
 
   s.ios.frameworks = 'UIKit', 'Foundation'
 end
