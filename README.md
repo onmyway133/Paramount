@@ -8,6 +8,8 @@ Like Flipboard FLEX, but allows custom action
 [![License](https://img.shields.io/cocoapods/l/Paramount.svg?style=flat)](http://cocoadocs.org/docsets/Paramount)
 [![Platform](https://img.shields.io/cocoapods/p/Paramount.svg?style=flat)](http://cocoadocs.org/docsets/Paramount)
 
+![](Screenshots/Banner.png)
+
 ## Usage
 
 ```swift
